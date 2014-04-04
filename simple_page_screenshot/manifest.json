@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Florian Mounier - paradoxxxzero",
   "homepage_url": "https://github.com/paradoxxxzero/simple_page_screenshot",
-  "description": "Take a screenshot from a region in the page and display it. You can them save it or copy the base 64 data uri of it with the context menu. (Copy image URL)",
+  "description": "Take a screenshot in your browser from a region and display it. You can then save the capture or copy the base 64 data URL.",
 
   "icons": {
     "128": "icon.png"
