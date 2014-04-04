@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Simple Page Screenshot",
+  "version": "1.0.0",
+  "author": "Florian Mounier - paradoxxxzero",
+  "homepage_url": "https://github.com/paradoxxxzero/simple_page_screenshot",
+  "description": "Take a screenshot from a region in the page and display it. You can them save it or copy the base 64 data uri of it with the context menu. (Copy image URL)",
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ]
+}
